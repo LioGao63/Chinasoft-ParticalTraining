@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chinasoft.mapper.userMapper">
+
+    <insert id="addUser">
+        insert into user(username,password) values ('jinzhou', '123456')
+    </insert>
+
+    <update id="updateUser">
+        update user set password='abcdef' where username='jinzhou'
+    </update>
+
+    <delete id="deleteUser">
+        delete from user where username='jinzhou'
+    </delete>
+
+</mapper>
